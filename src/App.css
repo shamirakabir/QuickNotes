@@ -59,6 +59,5 @@
 .box{
   height:100%;
   width:100%;
-  background:linear-gradient(rgba(0, 158, 250, 0.5),transparent);
-  background-color:gray /*this your primary color*/
+  background-color:white /*this your primary color*/
 }
