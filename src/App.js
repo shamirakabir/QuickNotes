@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './pages/home';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import Subscription from './pages/subscription';
+import Contact from './pages/contact';
 
 
 
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path="/Subscription">
             <Subscription />
+            </Route>
+          <Route path="/Contact">
+            <Contact />
           </Route>
         </Router>
 
