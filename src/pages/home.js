@@ -3,11 +3,11 @@ import './style.css';
 
 function Home() {
     return (
-        <div style={{position:"relative"}}>
+        <div style={{position:"absolute"}}>
             <div style={{
-                position:"absolute",
-                top:250,
-                left:250,
+                position:"relative",
+                top: 200,
+                left:85,
                 textAlign: 'left'}}>
                 <h1 className="describe">Jot down notes quicker with AI.</h1>
                 <p className="describe-note">Powerful design application incorparted with artifical intelligence to script notes during lectures.</p>

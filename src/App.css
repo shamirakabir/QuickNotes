@@ -44,7 +44,7 @@
 
 .sidebar {
   flex: 0 0 100px;
-  background-color: rgb(70, 109, 240);
+  background-color: rgb(22, 148, 206);
 }
 .content {
   flex: 1;
@@ -59,6 +59,6 @@
 .box{
   height:100%;
   width:100%;
-  background:linear-gradient(rgba(0, 158, 250, 0.5),transparent);
-  background-color:gray /*this your primary color*/
+  background:linear-gradient(rgb(255, 255, 255),transparent);
+  background-color: rgb(255, 255, 255) /*this your primary color*/
 }
