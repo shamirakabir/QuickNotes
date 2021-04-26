@@ -1,19 +1,22 @@
 form {
     display: block;
     margin-top: 0em;
+    padding-right: 7%;
+    margin: auto;
 }
 .form-group {
     margin-bottom: 24px;
 }
-div.form-control{
-    display: block;
-}
+
 input.form-control {
     height: 40px;
     line-height: 40px;
     padding-top: 0;
     padding-bottom: 0;
     border-color: #babacc;
+    margin: auto;
+    position: center;
+
 }
 .form-control {
     display: block;
@@ -39,6 +42,8 @@ input.form-control {
 .right-container {
     background-color: #fff;
     border-radius: 0 12px 12px 0;
+    padding: 10%;
+    margin: auto;
 }
 label {
     font-weight: normal;
@@ -47,23 +52,86 @@ label {
     font-weight: bold;
 }
 .email-label, .password-label {
-    display: block;
     margin-bottom: 4px;
     font-size: 14px;
     color: #747487;
+    font-weight: 440;
 }
-.form-item-flex-wrap .position-button {
+.email{
+    position: relative;
+}
+.card-layout {
+    width: 352px;
+    -webkit-box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+    padding: 24px 32px 32px;
+    border-radius: 8px;
+    margin: 0 auto;
+    background: #fff;
+    
+}
+.ride-line {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+.btn-primary {
+    background-color: #0faae7;
+    border-color:  #0faae7;
+    color: #fff;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    
+}
+.btn.user {
+    width: 355px;
+    font-size: 15px;
+    height: 35px;
+}
+
+.btn__tertiary--medium {
+    text-decoration: none;
+    color: #159bda ;
+    font-weight: 600;
+}
+
+a.position-button{
     position: absolute;
-    right: 1px;
-    top: -34px;
+    right: 490px;
+    top: 400px;
     border: 0;
     padding: 6px;
     background-color: transparent;
-    box-sizing: border-box;
     text-align: right;
     font-size: 14px;
     line-height: 28px;
-    outline: 0;
-    z-index: 1;
+    text-decoration: none;
+    color: #159bda ;
+    font-weight: 600;
 }
+
+h1, p{
+    text-align: center;
+}
+
+
+
 

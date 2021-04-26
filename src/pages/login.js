@@ -14,18 +14,21 @@ function Login(props) {
  
   return (
     <div class="col-sm-12 col-md-6 right-container">
-    <div class="right-item">
+    
+    <div class="card-layout">
+    <h1> Sign In </h1>
+    <p>Welcome Back!</p>
     <form id="login-form" action="javascript:;" autocomplete="off" class="" novalidate="novalidate">
       <div class="form-group">  
       <div class="controls">
-      <label for="email" class="email-label">Email Address</label>
-      <input type="email" {...username} class="form-control input " maxlength="128" placeholder="Email Address"></input>
+      <label class="email-label">Email Address</label>
+      <input type="email" class="form-control input" maxlength="128" placeholder="Email Address"></input>
       </div>
       </div>
       <div class="form-group">
       <div class="controls">
-      <label for="password" class="password-label">Password</label>
       <div class="form-item-flex-wrap">
+      <label class="email-label">Password</label>
       <input type="password" id="password" name="password" autocomplete="new-password" class="form-control input" maxlength="99" placeholder="Password"></input>
       <a class="position-button" href="#">Forgot password?</a>
       </div>
@@ -39,24 +42,21 @@ function Login(props) {
       </div>
       </div>
       </div>
+      {/* <p class="ride-line"><span>Or sign in with</span></p>
+      <div class="icon-group">
+      <a class="col-sm-3 col-xs-6 login-btn login-btn-sso" href="/web/sso/login?en=signin">
+      SSO</a>
+      <a class="col-sm-3 col-xs-6 login-btn login-btn-google" href="/google_oauth_signin">
+      Google</a>
+      <a class="col-sm-3 col-xs-6 login-btn login-btn-facebook" href="/facebook_oauth_signin">
+      Facebook</a>
+      </div> */}
       
 
       </form>
       </div>
+      <p>New to SuperNotes? <a href="#" class="btn__tertiary--medium"> Join Now </a></p>
       </div>
-
-    /* // <div>
-    //   <div style={{ marginTop: 100}}>
-    //     Username<br />
-    //     <input type="text" {...username} autoComplete="new-password" />
-    //   </div>
-    //   <div style={{ marginTop: 10 }}>
-    //     Password<br />
-    //     <input type="password" {...password} autoComplete="new-password" />
-    //   </div>
-    //   {error && <><small style={{ color: 'red' }}>{error}</small><br /></>}<br />
-    //   <input type="button" value={loading ? 'Loading...' : 'Login'} onClick={handleLogin} disabled={loading} /><br />
-    // </div> */
   );
 }
  
