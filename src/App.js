@@ -6,7 +6,7 @@ import Home from './pages/home';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import Subscription from './pages/subscription';
 import Contact from './pages/contact';
-
+import Login from "./pages/login";
 
 
 
@@ -30,6 +30,9 @@ function App() {
             </Route>
           <Route path="/Contact">
             <Contact />
+          </Route>
+          <Route path="/Login">
+            <Login />
           </Route>
         </Router>
 
