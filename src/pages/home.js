@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import './style.css';
 
+
 function Home() {
     return (
         <div style={{position:"absolute"}}>
@@ -11,9 +12,11 @@ function Home() {
                 textAlign: 'left'}}>
                 <h1 className="describe">Jot down notes quicker with AI.</h1>
                 <p className="describe-note">Powerful design application incorparted with artifical intelligence to script notes during lectures.</p>
-                <Link className='sign-up-button' to='/signup'>
+                <Link className='sign-up-button' to='./signup' variant = "body2">
                     Sign Up For Free
                 </Link>
+                
+                
             </div>
             
         </div>

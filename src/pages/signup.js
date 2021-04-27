@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import './login.css';
+import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
+import ToggleButton from 'react-bootstrap/ToggleButton';
 
-function Login(props) {
+
+function SignUp(props) {
   const username = useFormInput('');
   const password = useFormInput('');
   const [error, setError] = useState(null);
@@ -43,6 +46,11 @@ function Login(props) {
 
       </form>
       </div>
+      <ToggleButtonGroup type='checkbox' name='genre'>
+        <ToggleButton value={'Professor'}>Professor</ToggleButton>
+        <br></br>
+        <ToggleButton value={'Student'}>Student</ToggleButton>
+      </ToggleButtonGroup>
       </div>
 
     /* // <div>
@@ -72,4 +80,4 @@ const useFormInput = initialValue => {
   }
 }
  
-export default Login;
+export default SignUp;

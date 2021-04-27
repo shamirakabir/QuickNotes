@@ -33,6 +33,7 @@ function Contact() {
                 <Link className='sign-up-button' to='/signup'>
                     Employee Verification
                 </Link>
+                
             </div>
             
         </div>
