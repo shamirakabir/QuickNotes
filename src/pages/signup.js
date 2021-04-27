@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import './login.css';
-import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
-import ToggleButton from 'react-bootstrap/ToggleButton';
-
 
 function SignUp(props) {
   const username = useFormInput('');
@@ -17,54 +14,49 @@ function SignUp(props) {
  
   return (
     <div class="col-sm-12 col-md-6 right-container">
-    <div class="right-item">
+    
+    <div class="card-layout">
+    <h1> Sign Up </h1>
+   
     <form id="login-form" action="javascript:;" autocomplete="off" class="" novalidate="novalidate">
       <div class="form-group">  
       <div class="controls">
-      <label for="email" class="email-label">Email Address</label>
-      <input type="email" {...username} class="form-control input " maxlength="128" placeholder="Email Address"></input>
+      <label class="email-label">Email Address</label>
+      <input type="email" class="form-control input" maxlength="128" placeholder="Email Address"></input>
       </div>
       </div>
       <div class="form-group">
       <div class="controls">
-      <label for="password" class="password-label">Password</label>
       <div class="form-item-flex-wrap">
+      <label class="email-label">Password</label>
       <input type="password" id="password" name="password" autocomplete="new-password" class="form-control input" maxlength="99" placeholder="Password"></input>
-      <a class="position-button" href="#">Forgot password?</a>
+  
       </div>
       </div>
       </div>
       <div class="form-group">
       <div class="controls">
       <div class="signin">
-      <button type="button" class="btn btn-primary signin user">Sign In</button>
+      <button type="button" class="btn btn-primary signin user">Sign Up</button>
       <i class="busy busy24"></i>
       </div>
       </div>
       </div>
+      {/* <p class="ride-line"><span>Or sign in with</span></p>
+      <div class="icon-group">
+      <a class="col-sm-3 col-xs-6 login-btn login-btn-sso" href="/web/sso/login?en=signin">
+      SSO</a>
+      <a class="col-sm-3 col-xs-6 login-btn login-btn-google" href="/google_oauth_signin">
+      Google</a>
+      <a class="col-sm-3 col-xs-6 login-btn login-btn-facebook" href="/facebook_oauth_signin">
+      Facebook</a>
+      </div> */}
       
 
       </form>
       </div>
-      <ToggleButtonGroup type='checkbox' name='genre'>
-        <ToggleButton value={'Professor'}>Professor</ToggleButton>
-        <br></br>
-        <ToggleButton value={'Student'}>Student</ToggleButton>
-      </ToggleButtonGroup>
+      
       </div>
-
-    /* // <div>
-    //   <div style={{ marginTop: 100}}>
-    //     Username<br />
-    //     <input type="text" {...username} autoComplete="new-password" />
-    //   </div>
-    //   <div style={{ marginTop: 10 }}>
-    //     Password<br />
-    //     <input type="password" {...password} autoComplete="new-password" />
-    //   </div>
-    //   {error && <><small style={{ color: 'red' }}>{error}</small><br /></>}<br />
-    //   <input type="button" value={loading ? 'Loading...' : 'Login'} onClick={handleLogin} disabled={loading} /><br />
-    // </div> */
   );
 }
  
@@ -81,3 +73,6 @@ const useFormInput = initialValue => {
 }
  
 export default SignUp;
+
+
+
