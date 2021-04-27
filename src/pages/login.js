@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './login.css';
+import {Link } from "react-router-dom";
 
 function Login(props) {
   const username = useFormInput('');
@@ -37,7 +38,11 @@ function Login(props) {
       <div class="form-group">
       <div class="controls">
       <div class="signin">
-      <button type="button" class="btn btn-primary signin user">Sign In</button>
+      <Link to="/professorHomePage"><button>
+        Sign in
+      </button>
+      </Link>
+      
       <i class="busy busy24"></i>
       </div>
       </div>
@@ -59,6 +64,8 @@ function Login(props) {
       </div>
   );
 }
+
+//<button type="button" class="btn btn-primary signin user">Sign In</button>
  
 const useFormInput = initialValue => {
   const [value, setValue] = useState(initialValue);

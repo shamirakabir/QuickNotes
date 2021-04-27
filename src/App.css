@@ -43,7 +43,7 @@
 }
 
 .sidebar {
-  flex: 0 0 100px;
+  flex: 100 0 100px;
   background-color: rgb(70, 109, 240);
 }
 .content {
