@@ -15,8 +15,15 @@ function Home() {
                 <Link className='sign-up-button' to='./type' variant = "body2">
                     Sign Up For Free
                 </Link>
+<<<<<<< HEAD
                 
                 
+=======
+                <p className="space"></p>
+                <iframe src="https://giphy.com/embed/JigWpkvVGoMS6aA8UF" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen>
+                    <p><a href="https://giphy.com/gifs/JigWpkvVGoMS6aA8UF">via GIPHY</a></p>
+                </iframe>
+>>>>>>> 652f5182ff46b2952b22e9f035f26a572400bb25
             </div>
             
         </div>
