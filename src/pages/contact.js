@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import './style.css';
-import "/Users/jatinkulkarni/Super-Notes-Copy/src/App.css"
 
 function Contact() {
     return (
