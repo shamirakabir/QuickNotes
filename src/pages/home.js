@@ -8,19 +8,33 @@ function Home() {
             <div style={{
                 position:"relative",
                 top: 200,
-                left:85,
+                left:50,
                 textAlign: 'left'}}>
                 <h1 className="describe">Jot down notes quicker with AI.</h1>
                 <p className="describe-note">Powerful design application incorparted with artifical intelligence to script notes during lectures.</p>
                 <Link className='sign-up-button' to='./type' variant = "body2">
                     Sign Up For Free
                 </Link>
+<<<<<<< HEAD
                 <div>
+=======
+>>>>>>> 59ca0c995c6ffeb30a29db1033bf9eb5a7e349dd
                 <p className="space"></p>
+                
+            </div>
+            <div style={{
+                position: "absolute",
+                top: 1,
+                left: 800,
+                textAlign: 'left'
+            }}>
                 <iframe src="https://giphy.com/embed/JigWpkvVGoMS6aA8UF" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen>
                     <p><a href="https://giphy.com/gifs/JigWpkvVGoMS6aA8UF">via GIPHY</a></p>
                 </iframe>
+<<<<<<< HEAD
                 </div>
+=======
+>>>>>>> 59ca0c995c6ffeb30a29db1033bf9eb5a7e349dd
             </div>
             
         </div>

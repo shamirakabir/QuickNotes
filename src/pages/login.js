@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './login.css';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 59ca0c995c6ffeb30a29db1033bf9eb5a7e349dd
 
 function Login(props) {
   const username = useFormInput('');

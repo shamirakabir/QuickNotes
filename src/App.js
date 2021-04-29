@@ -11,6 +11,7 @@ import Type from './pages/type';
 import ProfessorHomePage from './pages/professorHomePage';
 
 
+
 function App() {
   return (
     <div className="App">
@@ -37,7 +38,9 @@ function App() {
           <Route path="/type">
             <Type />
           </Route>
-          
+
+
+
           <Route path="/professorHomepage">
             <ProfessorHomePage />
           </Route>
