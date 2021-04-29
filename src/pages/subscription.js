@@ -2,12 +2,8 @@
   
 const Subscription = () => {
   return (
-    <div style={{position:"relative"}}>
-            <div style={{
-             
-                top: 250,
-                left: 250,
-                textAlign: 'center'}}>
+    <div>
+            <div>
                 <h1 className='style-sub'>TA Chatbot</h1>
                 <p className='style-describe'>During your zoom meeting, ask the personal TA Chatbot a question!</p>
                 <h2 className='style-sub'>Note Summarizer</h2>

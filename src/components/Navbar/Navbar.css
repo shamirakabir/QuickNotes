@@ -23,7 +23,7 @@
     flex: 1;
     text-align: start;
     font-size: 30px;
-    
+    font-weight: bold;
 }
 li{
     display: inline;
