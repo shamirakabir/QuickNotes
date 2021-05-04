@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import React, { useState } from "react";
 import './professorHomePage.css';
+import Calendar from 'react-calendar'
+import 'react-calendar/dist/Calendar.css';
 
 function ProfessorHomePage() {
     const [ text, setText ] = useState(null)
@@ -98,7 +100,13 @@ function ProfessorHomePage() {
                 <Link className='sign-up-button' to='/signup'>
                     Add an announcement
                 </Link>
-
+                <p className="space"></p>
+                <p className="space"></p>
+                <p className="space"></p>
+                <p className="space"></p>
+                <>
+                    <Calendar />
+                </>
             </div>
             </div>
 
