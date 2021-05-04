@@ -42,10 +42,6 @@
     }
   }
   
-  .sidebar {
-    flex: 0 0 100px;
-    background-color: rgb(70, 109, 240);
-  }
   .content {
     flex: 1;
   }
@@ -58,4 +54,7 @@
     width:100%;
     background-color:white /*this your primary color*/
   }
-  
+  .upload input {
+    display: flex;
+    margin: 10px;
+  }

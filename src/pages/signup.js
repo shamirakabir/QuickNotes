@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './login.css';
 
 function SignUp(props) {
@@ -8,9 +9,14 @@ function SignUp(props) {
   const [loading, setLoading] = useState(false);
  
   // handle button click of login form
-  const handleLogin = () => {
+  const handleSignUp = () => {
     props.history.push('./home');
   }
+
+  const onLoginClick = (event) => {
+    console.log(event);
+    props.setloginProfessor(true);
+}
  
   return (
     <div class="col-sm-12 col-md-6 right-container">
@@ -37,7 +43,8 @@ function SignUp(props) {
       <div class="form-group">
       <div class="controls">
       <div class="signin">
-      <button type="button" class="btn btn-primary signin user">Sign Up</button>
+      <Link to="/studentHomePage" onClick={onLoginClick}><button type="button" class="btn btn-primary signin user">Sign Up</button>
+      </Link>
       <i class="busy busy24"></i>
       </div>
       </div>

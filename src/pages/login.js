@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './login.css';
-<<<<<<< HEAD
 
-=======
->>>>>>> 59ca0c995c6ffeb30a29db1033bf9eb5a7e349dd
 
 function Login(props) {
   const username = useFormInput('');
@@ -15,6 +12,11 @@ function Login(props) {
   // handle button click of login form
   const handleLogin = () => {
     props.history.push('./home');
+  }
+
+  const onLoginClick = (event) => {
+      console.log(event);
+      props.setloginProfessor(true);
   }
  
   return (
@@ -42,7 +44,7 @@ function Login(props) {
       <div class="form-group">
       <div class="controls">
       <div class="signin">
-      <Link to="/professorHomePage"><button>
+      <Link to="/professorHomePage" onClick={onLoginClick}><button>
         Sign in
       </button>
       </Link>

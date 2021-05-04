@@ -12,8 +12,13 @@ class Navbar extends Component {
         this.setState({ clicked: !this.state.clicked})
     }
     render(){
+        const isProfessor = this.props.isProfessor
+        let navbarClassname = 'NavbarItems';
+        if (isProfessor){
+            navbarClassname += ' navbarProfessor';
+        }
         return(
-            <nav className="NavbarItems">
+            <nav className={navbarClassname}>
                
                 <ul className={this.state.clicked ? 'nav-menu activate' : 'nav-menu'}>
                     { MenuItems.map((item, index) => {
