@@ -4,7 +4,7 @@ function Sidebar(props) {
 }    return (
         <div className='sidebar sidebarProfessor'>
             <div className='sidebaritem'>
-                <img className='sidebaricon' src="./images/calendar.png"/>
+                <img className='sidebaricon' src="https://static.thenounproject.com/png/423483-200.png"/>
                 <div className='sidebaritemlabel'>
                     Home
                 </div>
