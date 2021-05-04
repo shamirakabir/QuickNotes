@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import React from "react";
 import './professorHomePage.css';
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 
 function StudentHomePage() {
     return (
@@ -29,6 +31,15 @@ function StudentHomePage() {
                 <Link className='sign-up-button' to='/home'>
                     Lecture 4 Notes
                 </Link>
+                <p className="space"></p>
+                <p className="space"></p>
+                <p className="space"></p>
+                <p className="space"></p>
+                <p className="space"></p>
+                <p className="space"></p>
+                <>
+                <Calendar />
+                </>
             </div>
             <div style={{
                 position: "absolute",
