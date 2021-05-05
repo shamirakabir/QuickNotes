@@ -28,26 +28,75 @@ class SimpleForm extends Component {
                 steps={[
                 {
                     id:'intro', 
-                    message:'Do you agree to the Terms and Conditions?', 
+                    message:'Hi, I am your class TA Chatbot. What can I help with?', 
                     trigger:'intro-user',
                 },
                 {
                     id:'intro-user', 
-                    options:[
-                    {value:'y', label:'Yes', trigger:'yes-response'},
-                    {value:'n', label:'No', trigger:'no-response'},
-                    ] 
+							      user:true,
+							validator: (value) => {
+				                
+				                    return true;
+				                  
+				               
+				              },
+							trigger:'operating'
+                 
+                }
+                    
+                ,
+                {
+                    id:'operating', 
+                    message:"The first approach is to chop things up into variable-sized pieces, as we saw with segmentation in virtual memoryin virtual memory, we call this idea paging, and it goes back to an early and important system, the atlas instead of splitting up a process’s address space into some number of variable-sized logical segments, we divide it into fixed-sized units, each of which we call a page", 
+                    trigger: 'example'
+                },{
+                  id:'example',
+                  user:true,
+							  validator: (value) => {
+				                
+				                    return true;
+				                  
+				              },
+							trigger:'example-bot'
                 },
                 {
-                    id:'yes-response', 
-                    message:'Great!', 
-                    end:true,
-                },
-                {
-                    id:'no-response', 
-                    message:'Sorry to hear that.', 
-                    end:true,
-                },
+                  id:'example-bot', 
+                  message: "Physical memory consists of a number of fixed-sized slots, in this case eight page frames making for a 128-byte physical memory, also ridiculously small",
+                  trigger: 'office-hours'
+              }, {
+                id:'office-hours',
+                user:true,
+              validator: (value) => {
+                      return true;
+                    },
+            trigger:'final-oh'
+              }, {
+                id:'final-oh', 
+                  message: "The Professor's Office hours are TTh 9:30 am - 11:30 am",
+                  trigger: 'joke'
+              },{ id:'joke',
+                  user:true,
+                  validator: (value) => {
+                    return true;
+                  },
+                  trigger:'joke-bot'
+
+              }, {
+                  id:"joke-bot",
+                  message:"Why are elevator jokes so classic and good? They work on many levels. ",
+                  trigger:'bye'
+              },
+              {
+                id:'bye',
+                user:true,
+                trigger:'final'
+              },
+              {
+                id:'final',
+                message: "Bye!",
+                end: true
+              }
+
                 ]}
                 {...config}
             />
