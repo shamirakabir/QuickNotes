@@ -57,13 +57,9 @@ class SimpleForm extends Component {
 				                    return true;
 				                  
 				              },
-							trigger:'example-bot'
+							trigger:'office-hours'
                 },
-                {
-                  id:'example-bot', 
-                  message: "Physical memory consists of a number of fixed-sized slots, in this case eight page frames making for a 128-byte physical memory, also ridiculously small",
-                  trigger: 'office-hours'
-              }, {
+                 {
                 id:'office-hours',
                 user:true,
               validator: (value) => {
@@ -73,18 +69,7 @@ class SimpleForm extends Component {
               }, {
                 id:'final-oh', 
                   message: "The Professor's Office hours are TTh 9:30 am - 11:30 am",
-                  trigger: 'joke'
-              },{ id:'joke',
-                  user:true,
-                  validator: (value) => {
-                    return true;
-                  },
-                  trigger:'joke-bot'
-
-              }, {
-                  id:"joke-bot",
-                  message:"Why are elevator jokes so classic and good? They work on many levels. ",
-                  trigger:'bye'
+                  trigger: 'bye'
               },
               {
                 id:'bye',
