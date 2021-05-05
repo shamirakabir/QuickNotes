@@ -3,6 +3,7 @@ import React from "react";
 import './professorHomePage.css';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import SimpleForm from "../components/chatbot/SimpleForm";
 
 function StudentHomePage() {
     return (
@@ -49,8 +50,11 @@ function StudentHomePage() {
             }}>
                  <h1 className="describe"> TA Bot </h1>
                 <p className="space"></p>
-                
-
+                <div>
+        
+                    <SimpleForm />
+        
+                 </div>
             </div>
             </div>
 

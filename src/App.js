@@ -11,6 +11,7 @@ import Type from './pages/type';
 import ProfessorHomePage from './pages/professorHomePage';
 import Sidebar from './components/sidebar';
 import StudentHomePage from './pages/studentHomePage';
+import SimpleForm from "./components/chatbot/SimpleForm";
 
 function App() {
   const [isProfessor, setisProfessor] = useState(false)
