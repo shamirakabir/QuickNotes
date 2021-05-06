@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './login.css';
 
-
 function Login(props) {
   const username = useFormInput('');
   const password = useFormInput('');
@@ -11,12 +10,11 @@ function Login(props) {
  
   // handle button click of login form
   const handleLogin = () => {
-    props.history.push('./home');
+    props.history.push('./');
   }
-
   const onLoginClick = (event) => {
-      console.log(event);
-      props.setloginProfessor(true);
+    console.log(event);
+    props.setloginProfessor(false);
   }
  
   return (
@@ -44,37 +42,20 @@ function Login(props) {
       <div class="form-group">
       <div class="controls">
       <div class="signin">
-      <Link to="/professorHomePage" onClick={onLoginClick}><button>
-        Sign in
-      </button>
+      <Link to="/studentHomePage" onClick={onLoginClick}>
+      <button type="button" class="btn btn-primary signin user">Sign In</button>
       </Link>
-      
       <i class="busy busy24"></i>
       </div>
       </div>
       </div>
-      {/* <p class="ride-line"><span>Or sign in with</span></p>
-      <div class="icon-group">
-      <a class="col-sm-3 col-xs-6 login-btn login-btn-sso" href="/web/sso/login?en=signin">
-      SSO</a>
-      <a class="col-sm-3 col-xs-6 login-btn login-btn-google" href="/google_oauth_signin">
-      Google</a>
-      <a class="col-sm-3 col-xs-6 login-btn login-btn-facebook" href="/facebook_oauth_signin">
-      Facebook</a>
-      </div> */}
-      
-
       </form>
       </div>
-      <p>New to SuperNotes? <a href="#" class="btn__tertiary--medium"> 
-      <Link to="./type">
-        Join Now 
-      </Link></a></p>
+      <p>New to QuickNotes? <a href="#" class="btn__tertiary--medium"> Join Now </a></p>
       </div>
+
   );
 }
-
-//<button type="button" class="btn btn-primary signin user">Sign In</button>
  
 const useFormInput = initialValue => {
   const [value, setValue] = useState(initialValue);

@@ -1,8 +1,10 @@
+
 form {
     display: block;
     margin-top: 0em;
     padding-right: 7%;
     margin: auto;
+    text-align: left;
 }
 .form-group {
     margin-bottom: 24px;
@@ -38,18 +40,21 @@ input.form-control {
 .right-item {
     width: 350px;
     margin: 47px auto 0;
+    /* margin-top: -100px; */
 }
 .right-container {
-    background-color: #fff;
+    background-color:whitesmoke;
     border-radius: 0 12px 12px 0;
     padding: 10%;
     margin: auto;
+    margin-top: -60px;
 }
 label {
     font-weight: normal;
     display: inline-block;
     margin-bottom: 5px;
     font-weight: bold;
+    text-align: left;
 }
 .email-label, .password-label {
     margin-bottom: 4px;
@@ -59,6 +64,7 @@ label {
 }
 .email{
     position: relative;
+    text-align: left;
 }
 .card-layout {
     width: 352px;
@@ -77,9 +83,9 @@ label {
     margin-bottom: 32px;
 }
 .btn-primary {
-    background-color: #0faae7;
-    border-color:  #0faae7;
-    color: #fff;
+    background-color:rgba(57, 142, 212, 0.74);
+    border-color: rgba(57, 142, 212, 0.74);
+    color: rgba(57, 142, 212, 0.74);
 }
 .btn {
     display: inline-block;
@@ -109,14 +115,14 @@ label {
 
 .btn__tertiary--medium {
     text-decoration: none;
-    color: #159bda ;
+    color: rgba(57, 142, 212, 0.74);
     font-weight: 600;
 }
 
 a.position-button{
     position: absolute;
-    right: 490px;
-    top: 400px;
+    right: 540px;
+    top: 390px;
     border: 0;
     padding: 6px;
     background-color: transparent;
@@ -124,7 +130,7 @@ a.position-button{
     font-size: 14px;
     line-height: 28px;
     text-decoration: none;
-    color: #159bda ;
+    color:rgba(57, 142, 212, 0.74);
     font-weight: 600;
 }
 
