@@ -6,10 +6,10 @@ import { ThemeProvider } from 'styled-components';
 const theme = {
     background: '#f5f8fb',
     fontFamily: 'Helvetica Neue',
-    headerBgColor: '#EF6C00',
+    headerBgColor: '#47c0de',
     headerFontColor: '#fff',
     headerFontSize: '15px',
-    botBubbleColor: '#EF6C00',
+    botBubbleColor: '#47c0de',
     botFontColor: '#fff',
     userBubbleColor: '#fff',
     userFontColor: '#4a4a4a',
@@ -47,7 +47,7 @@ class SimpleForm extends Component {
                 ,
                 {
                     id:'operating', 
-                    message:"The first approach is to chop things up into variable-sized pieces, as we saw with segmentation in virtual memoryin virtual memory, we call this idea paging, and it goes back to an early and important system, the atlas instead of splitting up a process’s address space into some number of variable-sized logical segments, we divide it into fixed-sized units, each of which we call a page", 
+                    message:"Paging is when pages are brought into physical memory when they are needed", 
                     trigger: 'example'
                 },{
                   id:'example',
