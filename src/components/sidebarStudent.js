@@ -1,17 +1,16 @@
 import calendar from "./images/calendar.png";
-import addfile from "./images/add-file.png";
+import notes from "./images/notebook.svg";
 import chatbot from "./images/chatbot.svg";
 import megaphone from "./images/megaphone.svg"
 import './sidebar.css'
 
+function SidebarStudent(props) {
 
-function Sidebar(props) {
-
-    const isProfessor = props.isProfessor
-    if(!isProfessor){
+    const isStudent = props.isStudent
+    if (!props.isStudent){
         return null;
-    }
-    
+    }    
+
     return (
         <div class='sidebar'>
             <div class="logo-sidebar">
@@ -25,15 +24,15 @@ function Sidebar(props) {
                 </div>
                 </div>
                 <div class='sidebaritem'>
-                <img class='sidebaricon' src={addfile}/>
+                <img width="45px" height="45px" position="relative" align-item="center" src={notes}/>
                 <div class='sidebaritemlabel'>
-                    Upload Audio
+                    Notes
                 </div>
                 </div>
                 <div class='sidebaritem'>
                 <img src={chatbot} width="45px" height="45px" position="relative" align-item="center"/>
                 <div class='sidebaritemlabel'>
-                    Manage TA Chatbot
+                    TA Chatbot
                 </div>
                 </div>
                 <div class='sidebaritem'>
@@ -55,4 +54,4 @@ function Sidebar(props) {
     )
 }
 
-export default Sidebar;
+export default SidebarStudent;

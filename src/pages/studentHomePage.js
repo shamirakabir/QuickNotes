@@ -4,9 +4,12 @@ import './professorHomePage.css';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import SimpleForm from "../components/chatbot/SimpleForm";
+import SidebarStudent from "../components/sidebarStudent"
 
 function StudentHomePage() {
     return (
+        <div>
+            <SidebarStudent/>
         <div style={{ position: "relative" }}>
             <div className='sidebar'>
             <div style={{
@@ -61,6 +64,7 @@ function StudentHomePage() {
             </div>
             </div>
 
+        </div>
         </div>
     )
 }

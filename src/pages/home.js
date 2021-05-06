@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import './style.css';
 import learning from "./learning.png"
-
+import Navbar from '../components/Navbar/Navbar';
 
 function Home() {
     return (
+      <div><Navbar/>
         <section id="hero" class="d-flex align-items-center">
 
         <div class="container">
@@ -36,8 +37,8 @@ function Home() {
             </div>
           </div>
         </div>
-    
       </section>
+      </div>
         // <div style={{position:"absolute"}}>
         //     <div style={{
         //         position:"relative",

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import './professorHomePage.css';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import Sidebar from '../components/sidebar';
 
 function ProfessorHomePage(props) {
     const [ text, setText ] = useState(null)
@@ -37,11 +38,11 @@ function ProfessorHomePage(props) {
 
     return (
         <div style={{ position: "relative" }}>
-            <div class='sidebar'>
+            <div className='sidebar'>
             <div style={{
                 position: "absolute",
-                top: 1,
-                left: 100,
+                top: 0,
+                left: 200,
                 textAlign: 'left'
             }}>
                 <h1 className="describe">Upload Audio</h1>
@@ -80,8 +81,6 @@ function ProfessorHomePage(props) {
                     Lecture 4 Notes
                 </Link>
                 </div>
-            </div>
-               
                
 		    </div>
                 
@@ -107,6 +106,7 @@ function ProfessorHomePage(props) {
                 <div class="calendar">
                     <Calendar />
                 </div>
+            </div>
             </div>
             </div>
        

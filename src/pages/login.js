@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './login.css';
+import Navbar from '../components/Navbar/Navbar';
 
 function Login(props) {
   const username = useFormInput('');
@@ -14,11 +15,12 @@ function Login(props) {
   }
   const onLoginClick = (event) => {
     console.log(event);
-    props.setloginProfessor(true);
+    props.setloginProfessor(false);
     props.setloginStudent(true);
   }
  
   return (
+    <div><Navbar/>
     <div class="col-sm-12 col-md-6 right-container">
     
     <div class="card-layout">
@@ -43,7 +45,7 @@ function Login(props) {
       <div class="form-group">
       <div class="controls">
       <div class="signin">
-      <Link to="/professorHomePage" onClick={onLoginClick}>
+      <Link to="/studentHomePage" onClick={onLoginClick}>
       <button type="button" class="btn btn-primary signin user">Sign In</button>
       </Link>
       <i class="busy busy24"></i>
@@ -53,6 +55,7 @@ function Login(props) {
       </form>
       </div>
       <p>New to QuickNotes? <a href="#" class="btn__tertiary--medium"> Join Now </a></p>
+      </div>
       </div>
 
   );

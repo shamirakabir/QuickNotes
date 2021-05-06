@@ -11,6 +11,7 @@ import Type from './pages/type';
 import ProfessorHomePage from './pages/professorHomePage';
 import Sidebar from './components/sidebar';
 import StudentHomePage from './pages/studentHomePage';
+import SidebarStudent from "./components/sidebarStudent"
 import SimpleForm from "./components/chatbot/SimpleForm";
 
 function App() { 
@@ -25,12 +26,13 @@ function App() {
 
   return (
     <div className="App">
-      <Sidebar isProfessor={isProfessor} isStudent={isStudent}/>
+      <Sidebar isProfessor={isProfessor}/>
+      <SidebarStudent isStudent={isStudent}/>
+      {/* <SidebarStudent isStudent={isStudent}/> */}
       {/* <div className={sidebarClassName}> </div> */}
         <div className='content'>
           
         <Router>
-          <Navbar/> 
           <Route exact path="/">
             <Home />
           </Route>
