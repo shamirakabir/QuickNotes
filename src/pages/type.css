@@ -1,7 +1,8 @@
 .btn-primary {
-    background-color: #0faae7;
-    border-color:  #0faae7;
+    background-color: rgba(57, 142, 212, 0.74);
+    border-color:  rgba(57, 142, 212, 0.74);
     color: #fff;
+    align-items: center;
 }
 .btn {
     display: inline-block;
@@ -21,6 +22,7 @@
     background-image: none;
     border: 1px solid transparent;
     border-radius: 6px;
+    position: relative;
     
 }
 .btn.user {
@@ -31,24 +33,10 @@
 
 .btn__tertiary--medium {
     text-decoration: none;
-    color: #159bda ;
+    color: rgba(57, 142, 212, 0.74);
     font-weight: 600;
 }
 
-a.position-button{
-    position: absolute;
-    right: 490px;
-    top: 400px;
-    border: 0;
-    padding: 6px;
-    background-color: transparent;
-    text-align: right;
-    font-size: 14px;
-    line-height: 28px;
-    text-decoration: none;
-    color: #159bda ;
-    font-weight: 600;
-}
 
 .changes{
     text-align: center;
