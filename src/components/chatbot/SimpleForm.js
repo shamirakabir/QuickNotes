@@ -57,16 +57,9 @@ class SimpleForm extends Component {
 				                    return true;
 				                  
 				              },
-							trigger:'office-hours'
+							trigger:'final-oh'
                 },
-                 {
-                id:'office-hours',
-                user:true,
-              validator: (value) => {
-                      return true;
-                    },
-            trigger:'final-oh'
-              }, {
+                  {
                 id:'final-oh', 
                   message: "The Professor's Office hours are TTh 9:30 am - 11:30 am",
                   trigger: 'bye'
