@@ -1,7 +1,7 @@
 // eslint-disable-next-line 
 import React, { Component } from 'react';
 import { MenuItems } from "./MenuItems"
-import'./Navbar.css';
+import'./style2.css';
 import { Link } from 'react-router-dom';
 import logo from '../../logo.png';
 
@@ -14,32 +14,31 @@ class Navbar extends Component {
     render(){
         const isProfessor = this.props.isProfessor
         let navbarClassname = 'NavbarItems';
-        if (isProfessor){
-            navbarClassname += ' navbarProfessor';
-        }
-        return(
-            <nav className={navbarClassname}>
-               
-                <ul className={this.state.clicked ? 'nav-menu activate' : 'nav-menu'}>
-                    { MenuItems.map((item, index) => {
-                        return(
-                            <li key={index}>
-                                <Link className={item.cName} to={item.url}>
-                                    {item.title}
-                                </Link>
-                                
-                            </li>
-                        )
-                    }
-                    
-                    ) }
-                    
-                </ul>
-                <img className="logo" src={logo} alt="Logo" />
-            </nav>
-            
-        )
+        if (!isProfessor){
+            return(
+                <header id="header" class="fixed-top">
+                <div class="container d-flex align-items-center justify-content-between">
+                <a href="/" class="logo">
+                    <img src={logo} alt="Logo"/>
+                </a>
 
+                <nav id="navbar" class="navbar">
+                <ul>
+                <li><a class="nav-link scrollto " href="/">Home</a></li>
+                <li><a class="nav-link scrollto" href="/login">Login</a></li>
+                <li><a class="nav-link scrollto" href="/">Product</a></li>
+                <li><a class="nav-link scrollto " href="/subscription">Services</a></li>
+                <li><a class="nav-link scrollto" href="/contact">Contact</a></li>
+                <li><a class="getstarted scrollto" href="/type">Get Started</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+
+                </div>
+                </header> 
+                
+            )
+        }
         
     }
 
