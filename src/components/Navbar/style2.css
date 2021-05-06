@@ -158,3 +158,6 @@ body {
     border-color: rgba(57, 142, 212, 0.74);
   }
   
+  .navbar .hide-navigation-item {
+    display: none;
+  }

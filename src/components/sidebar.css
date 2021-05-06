@@ -1,0 +1,25 @@
+.sidebar{
+    background-color: #c45f0df6;
+    width: 100px;
+    
+}
+  
+.sidebaritems{
+    margin-top: 120px;
+}
+.sidebaritem{
+    padding-top: 30px;
+    
+}
+.sidebaricon {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    align-items: center;
+    filter: brightness(0) invert(1);
+}
+
+.sidebaritemlabel{
+    font-size: 12px;
+    color: white;
+}

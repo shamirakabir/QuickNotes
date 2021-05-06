@@ -43,38 +43,5 @@
   }
 }
 
-.sidebar {
-
-  display: flex;
-  flex: 0 0 100px;
-  flex-direction: column;
-  background-color: rgb(255, 255, 255);
-
-  
-
-}
-.content {
-  flex: 1;
-}
-.describe {
-  font-size: 3rem;
-}
-
-.sidebar.sidebarProfessor{
-  background-color:rgb(255, 145, 0);
-
-}
-
-.sidebaritem{
-  text-align: center;
-  
- 
-}
-
-.sdebaricon{
-  width: 80px;
- 
-  
-}
 
 

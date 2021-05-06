@@ -4,7 +4,7 @@ import './professorHomePage.css';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 
-function ProfessorHomePage() {
+function ProfessorHomePage(props) {
     const [ text, setText ] = useState(null)
 	const [ file, setFile ] = useState(null)
     const [ base64, setBase64 ] = useState(null)
@@ -20,7 +20,7 @@ function ProfessorHomePage() {
 		if (data.output !== "idk") {
 			setText(`${Math.round(data.probability * 1000) / 10}% sure this is a ${data.type}.`)
 		}
-	}
+    }
 
 	const handleFileChange = (e) => {
 		console.log(e.target.files)
@@ -33,11 +33,11 @@ function ProfessorHomePage() {
 		if (e.target.files[0]) {
 			reader.readAsDataURL(e.target.files[0])
 		}
-	}
+    }
 
     return (
         <div style={{ position: "relative" }}>
-            <div className='sidebar'>
+            <div class='sidebar'>
             <div style={{
                 position: "absolute",
                 top: 1,
@@ -104,12 +104,11 @@ function ProfessorHomePage() {
                 <p className="space"></p>
                 <p className="space"></p>
                 <p className="space"></p>
-                <>
+                <div class="calendar">
                     <Calendar />
-                </>
+                </div>
             </div>
             </div>
-
        
     )
 }

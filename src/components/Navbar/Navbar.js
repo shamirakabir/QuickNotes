@@ -39,6 +39,17 @@ class Navbar extends Component {
                 
             )
         }
+        else{
+            return(
+                <header id="header" class="fixed-top">
+                <div class="container d-flex align-items-center justify-content-between">
+                <a href="/" class="logo">
+                    <img src={logo} alt="Logo"/>
+                </a>
+                </div>
+                </header> 
+            )
+        }
         
     }
 

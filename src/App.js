@@ -13,23 +13,24 @@ import Sidebar from './components/sidebar';
 import StudentHomePage from './pages/studentHomePage';
 import SimpleForm from "./components/chatbot/SimpleForm";
 
-function App() {
+function App() { 
   const [isProfessor, setisProfessor] = useState(false)
+  const [isStudent, setisStudent] = useState(false);
+  const [isNavbarHidden] = useState(true);
   let sidebarClassName = 'sidebar';
-  if (isProfessor){
+  if (isProfessor || isStudent){
     sidebarClassName+=' sidebarProfessor';
   }
 
 
   return (
     <div className="App">
-     <Sidebar isProfessor={isProfessor}/>
+      <Sidebar isProfessor={isProfessor} isStudent={isStudent}/>
       {/* <div className={sidebarClassName}> </div> */}
         <div className='content'>
           
-          
         <Router>
-        <Navbar />
+          <Navbar/> 
           <Route exact path="/">
             <Home />
           </Route>
@@ -40,10 +41,10 @@ function App() {
             <Contact />
           </Route>
           <Route path="/Login">
-            <Login setloginProfessor={setisProfessor}/>
+            <Login setloginProfessor={setisProfessor} setloginStudent={setisStudent}/>
           </Route>
           <Route path="/signup">
-            <SignUp setloginProfessor={setisProfessor}/>
+            <SignUp setloginProfessor={setisProfessor} setloginStudent={setisStudent}/>
           </Route>
           <Route path="/type">
             <Type />
@@ -53,7 +54,7 @@ function App() {
           </Route>
           <Route path="/studentHomepage">
             <StudentHomePage />
-          </Route>
+        </Route>
         </Router>
 
         
