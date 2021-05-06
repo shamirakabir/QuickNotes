@@ -39,7 +39,7 @@ function StudentHomePage() {
                 <p className="space"></p>
                 <p className="space"></p>
                 <>
-                <Calendar />
+                
                 </>
             </div>
             <div style={{
@@ -48,8 +48,11 @@ function StudentHomePage() {
                 left: 550,
                 textAlign: 'left'
             }}>
-                 <h1 className="describe"> TA Bot </h1>
+                 <h1 className="describe"> Calendar </h1>
                 <p className="space"></p>
+                <>
+                <Calendar />
+                </>
                 <div>
         
                     <SimpleForm />
