@@ -40,7 +40,7 @@ function ProfessorHomePage(props) {
     return (
         <div>
         <img style={{ marginRight: "-1050px", marginTop: "30px", width:"220px", height:"40px"}} src={logo}></img>
-        <p style={{ position: "relative", top:-20, left: 40, textAlign:'left', fontSize: 30, color: "#6a7489", fontWeight: 500 }} > Upload Audio </p>
+        <p style={{ position: "relative", top:-30, left: 40, textAlign:'left', fontSize: 30, color: "#6a7489", fontWeight: 500 }} > Upload Audio </p>
         <div style={{ position: "relative",
                 top: -30,
                 right: 20,
