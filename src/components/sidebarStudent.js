@@ -3,7 +3,6 @@ import notes from "./images/notebook.svg";
 import chatbot from "./images/chatbot.svg";
 import megaphone from "./images/megaphone.svg"
 import './sidebar.css'
-
 function SidebarStudent(props) {
 
     const isStudent = props.isStudent
@@ -13,9 +12,6 @@ function SidebarStudent(props) {
 
     return (
         <div class='sidebar'>
-            <div class="logo-sidebar">
-                
-            </div>
             <div class='sidebaritems'>
             <div class='sidebaritem'>
                 <img class='sidebaricon' src="https://img.icons8.com/ios/100/000000/user-male-circle.png"/>
@@ -26,7 +22,7 @@ function SidebarStudent(props) {
                 <div class='sidebaritem'>
                 <img width="45px" height="45px" position="relative" align-item="center" src={notes}/>
                 <div class='sidebaritemlabel'>
-                    Notes
+                    Lecture Notes
                 </div>
                 </div>
                 <div class='sidebaritem'>
@@ -48,7 +44,12 @@ function SidebarStudent(props) {
                 </div>
                 </div>
             </div>
-
+            <div class='sidebaritem'>
+            <img class='sidebaricon'src="https://img.icons8.com/ios/50/000000/logout-rounded-left.png"/>
+            <div class='sidebaritemlabel'>
+                Go Back to Canvas
+            </div>
+            </div>
          </div>
 
     )

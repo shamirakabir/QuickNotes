@@ -49,7 +49,14 @@ function Sidebar(props) {
                 </div>
                 </div>
             </div>
-
+            <div class="logo-sidebar">
+            <div class='sidebaritem'>
+            <img src="https://img.icons8.com/ios/50/000000/logout-rounded-left.png" class="sidebaricon"/>
+            <div class='sidebaritemlabel'>
+                Announcements
+            </div>
+            </div> 
+            </div>
          </div>
 
     )
