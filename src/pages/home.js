@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import './style.css';
 import learning from "./learning.png"
 import Navbar from '../components/Navbar/Navbar';
+import Typist from "react-typist";
 
 
 function Home() {
@@ -16,8 +17,7 @@ function Home() {
                 top: 150,
                 left: 60,
                 textAlign: 'left'}}>
-              <h1>Jot down notes quicker </h1>
-              <h1>with AI.</h1>
+              <h1><Typist>Jot down notes quicker with AI. </Typist> </h1>
               <p>Powerful design application incorparted with artifical 
                 intelligence to script notes during lectures.</p>
               <div class="d-flex">

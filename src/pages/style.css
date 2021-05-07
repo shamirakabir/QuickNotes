@@ -46,3 +46,11 @@ xs
   #hero .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
+
+cursor{
+    show: true;
+    blink: true;
+    element: '|';
+    hideWhenDone: false;
+    hideWhenDoneDelay: 1000
+  }

@@ -50,16 +50,14 @@ function ProfessorHomePage(props) {
             <button class="btn-student"> Sort by Course ID</button></div>
         <div style={{ position: "relative" }}>
             <div className='sidebar'>
-            <div class="bg-white" style={{
+            <div class="my-3 bg-white" style={{
                 position: "absolute",
                 top: -30,
                 left: 60,
-                width: "400px",
-                height: "120px"
+                width: 400
             }}>
                 <div style={{
-                fontSize: "14px"
-                }}>
+                fontSize: "14px"}}>
                 <p fontSize="8px">Upload audio to turn into notes</p>
                 </div>
                 <p className='space'></p>
@@ -68,6 +66,12 @@ function ProfessorHomePage(props) {
                 <label for="choose-file" class="btn-upload" onChange={handleFileChange}>
                 Choose File
                 </label> 
+                <input maxlength="128" placeholder="Add Course ID" style={{
+                    backgroundColor:"white",
+                    border: "1px solid #ccc",
+                    borderRadius: "4px",
+                    color: "gray"
+                }}></input> 
 				<input id="upload-file" type="submit" value="Upload File" onClick={handleSubmit} />
                 <label for="upload-file" class="btn-upload" onClick={handleSubmit}>
                 Upload File
