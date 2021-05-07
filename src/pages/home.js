@@ -3,6 +3,7 @@ import './style.css';
 import learning from "./learning.png"
 import Navbar from '../components/Navbar/Navbar';
 
+
 function Home() {
     return (
       <div><Navbar/>

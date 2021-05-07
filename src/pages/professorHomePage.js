@@ -47,7 +47,7 @@ function ProfessorHomePage(props) {
                 textAlign: 'right' }}>
             <input class="search input" maxlength="128" placeholder="Search for Lecture" ></input>
             <button class="btn-student"> Sort by Date</button>
-            <button class="btn-student"> Sort by Class</button></div>
+            <button class="btn-student"> Sort by Course ID</button></div>
         <div style={{ position: "relative" }}>
             <div className='sidebar'>
             <div class="bg-white" style={{
@@ -94,6 +94,18 @@ function ProfessorHomePage(props) {
                     </tr>
                 </thead>
                 <tbody>
+                {/* <tr>
+                    <th scope="row">3/24/21</th>
+                    <th scope="row">53360</th>
+                <td><p style={{
+                textAlign: 'left',
+                color: 'black'
+                }}>
+                <Link className='sign-up-button' to="./OS_Notes.docx" target="_blank" download>
+                    Lecture 3/24/21 Notes
+                </Link>
+                </p></td>
+                </tr> */}
                     <tr>
                     <th scope="row">3/22/21</th>
                     <th scope="row">53360</th>
@@ -114,7 +126,7 @@ function ProfessorHomePage(props) {
                     color: 'black',
                     textAlign: 'left'
                     }}>
-                    <Link className='sign-up-button' to="./OS_Notes.docx" target="_blank" download>
+                    <Link to="/home">
                         Lecture 3/17/21 Notes
                     </Link>
                     </p></td>

@@ -23,7 +23,7 @@ function StudentHomePage() {
                 fontSize: "16px"}}>
             <input class="search input" maxlength="128" placeholder="Search for Lecture" ></input>
             <button class="btn-student"> Sort by Date</button>
-            <button class="btn-student"> Sort by Class</button></div>
+            <button class="btn-student"> Sort by Course</button></div>
         <div style={{ position: "relative" }}>
             <div className='sidebar'>
             <div style={{
@@ -37,14 +37,14 @@ function StudentHomePage() {
             <thead class="thead-dark">
                 <tr>
                 <th scope="col">Date</th>
-                <th scope="col" textAlign="left">Class</th>
+                <th scope="col" textAlign="left">Course</th>
                 <th scope="col" textAlign="left">Lecture Notes</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                 <th scope="row">3/22/21</th>
-                <th scope="row">CS 439</th>
+                <th scope="row">CS 468</th>
             <td><p style={{
             textAlign: 'left',
             color: 'black'
@@ -56,7 +56,7 @@ function StudentHomePage() {
             </tr>
             <tr>
             <th scope="row">3/17/21</th>
-            <th scope="row">CS 439</th>
+            <th scope="row">CS 468</th>
             <td >
                 <p style={{
                 color: 'black',
@@ -69,7 +69,7 @@ function StudentHomePage() {
             </tr>
             <tr>
             <th scope="row">3/15/21</th>
-            <th scope="row">CS 439</th>
+            <th scope="row">CS 468</th>
             <td><p style={{
             color: 'black',
             textAlign: 'left'
@@ -81,7 +81,7 @@ function StudentHomePage() {
             </tr>
             <tr>
             <th scope="row">3/10/21</th>
-            <th scope="row">CS 439</th>
+            <th scope="row">CS 468</th>
             <td><p style={{
             color: 'black',
             textAlign: 'left'
@@ -93,7 +93,7 @@ function StudentHomePage() {
             </tr>
             <tr>
             <th scope="row">3/08/21</th>
-            <th scope="row">CS 439</th>
+            <th scope="row">CS 468</th>
             <td><p style={{
             color: 'black',
             textAlign: 'left'
@@ -105,7 +105,7 @@ function StudentHomePage() {
             </tr>
             <tr>
             <th scope="row" >3/03/21</th>
-            <th scope="row">CS 439</th>
+            <th scope="row">CS 468</th>
             <td><p style={{
             color: 'black',
             textAlign: 'left'
