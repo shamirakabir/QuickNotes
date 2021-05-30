@@ -1,0 +1,31 @@
+It is sometimes said that the operating system takes one of two approaches
+when solving most any space-management problem. The first approach
+is to chop things up into variable-sized pieces, as we saw with segmentation in virtual memory. Unfortunately, this solution has inherent difficulties. In particular, when dividing a space into different-size chunks, the space itself can become fragmented, and thus allocation becomes more challenging over time.
+Thus, it may be worth considering the second approach: to chop up
+space into fixed-sized pieces. In virtual memory, we call this idea paging,
+and it goes back to an early and important system, the Atlas.
+Instead of splitting up a process’s address space into some number of
+variable-sized logical segments, we divide it into
+fixed-sized units, each of which we call a page. Correspondingly, we view
+physical memory as an array of fixed-sized slots called page frames; each
+of these frames can contain a single virtual-memory page. To help make this approach more clear, let’s illustrate it with a simple example. Figure presents an example of a tiny address space, only 64 bytes total in size, with four 16-byte pages. Real address spaces are much bigger, of course, commonly 32 bits
+and thus 4-GB of address space, or even 64 bits; in the book, we’ll often
+use tiny examples to make them easier to digest.Physical memory, as shown in Figure, also consists of a number of fixed-sized slots, in this case eight page frames making for a 128-byte physical memory, also ridiculously small. As you can see in the diagram,
+the pages of the virtual address space have been placed at different locations throughout physical memory; the diagram also shows the OS using some of physical memory for itself. Paging, as we will see, has a number of advantages over our previous approaches. Probably the most important improvement will be flexibility: with a fully-developed paging approach, the system will be able to
+support the abstraction of an address space effectively, regardless of how
+a process uses the address space; we won’t, for example, make assumptions about the direction the heap and stack grow and how they are used. Another advantage is the simplicity of free-space management that paging affords. For example, when the OS wishes to place our tiny 64-byte
+address space into our eight-page physical memory, it simply finds four
+free pages; perhaps the OS keeps a free list of all free pages for this, and
+just grabs the first four free pages off of this list. In the example, the OS
+has placed virtual page 0 of the address space in physical frame 3,
+virtual page 1 of the AS in physical frame 7, page 2 in frame 5, and page
+3 in frame 2. Page frames 1, 4, and 6 are currently free.
+To record where each virtual page of the address space is placed in
+physical memory, the operating system usually keeps a per-process data
+structure known as a page table. The major role of the page table is to
+store address translations for each of the virtual pages of the address
+space, thus letting us know where in physical memory each page resides.
+It is important to remember that this page table is a per-process data
+structure. If another process were to run in our example above, the OS would have to manage a different page table for it, as its virtual pages obviously map to different
+physical pages. Now, we know enough to perform an address-translation example.
+Let’s imagine the process with that tiny address space is performing a memory access. Specifically, let’s pay attention to the explicit load of the data from address into the register eax. To translate this virtual address that the process generated, we have to first split it into two components: the virtual page number, and the offset within the page. For this example, because the virtual address space of the process is 64 bytes, we need 6 bits total for our virtual address. 
