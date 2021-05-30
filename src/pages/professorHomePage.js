@@ -98,7 +98,7 @@ function ProfessorHomePage(props) {
                     </tr>
                 </thead>
                 <tbody>
-                {/* <tr>
+                <tr>
                     <th scope="row">3/24/21</th>
                     <th scope="row">53360</th>
                 <td><p style={{
@@ -109,7 +109,7 @@ function ProfessorHomePage(props) {
                     Lecture 3/24/21 Notes
                 </Link>
                 </p></td>
-                </tr> */}
+                </tr>
                     <tr>
                     <th scope="row">3/22/21</th>
                     <th scope="row">53360</th>

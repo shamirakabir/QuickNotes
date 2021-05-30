@@ -5,9 +5,8 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import SimpleForm from "../components/chatbot/SimpleForm";
 import SidebarStudent from "../components/sidebarStudent"
-import Dropdown from 'react-bootstrap/Dropdown'
-import DropdownButton from 'react-bootstrap/DropdownButton'
-import logo from "../logo.png"
+import logo from "../logo.png";
+import file from "./3_24_21_notes.docx";
 
 function StudentHomePage() {
     return (
@@ -42,9 +41,21 @@ function StudentHomePage() {
                 </tr>
             </thead>
             <tbody>
+            <tr>
+                    <th scope="row">3/24/21</th>
+                    <th scope="row">C S 468</th>
+                <td><p style={{
+                textAlign: 'left',
+                color: 'black'
+                }}>
+                <Link className='sign-up-button' to={file} target="_blank" download>
+                    Lecture 3/24/21 Notes
+                </Link>
+                </p></td>
+                </tr> 
                 <tr>
                 <th scope="row">3/22/21</th>
-                <th scope="row">CS 468</th>
+                <th scope="row">C S 468</th>
             <td><p style={{
             textAlign: 'left',
             color: 'black'
@@ -56,7 +67,7 @@ function StudentHomePage() {
             </tr>
             <tr>
             <th scope="row">3/17/21</th>
-            <th scope="row">CS 468</th>
+            <th scope="row">C S 468</th>
             <td >
                 <p style={{
                 color: 'black',
@@ -69,7 +80,7 @@ function StudentHomePage() {
             </tr>
             <tr>
             <th scope="row">3/15/21</th>
-            <th scope="row">CS 468</th>
+            <th scope="row">C S 468</th>
             <td><p style={{
             color: 'black',
             textAlign: 'left'
@@ -81,7 +92,7 @@ function StudentHomePage() {
             </tr>
             <tr>
             <th scope="row">3/10/21</th>
-            <th scope="row">CS 468</th>
+            <th scope="row">C S 468</th>
             <td><p style={{
             color: 'black',
             textAlign: 'left'
@@ -93,7 +104,7 @@ function StudentHomePage() {
             </tr>
             <tr>
             <th scope="row">3/08/21</th>
-            <th scope="row">CS 468</th>
+            <th scope="row">C S 468</th>
             <td><p style={{
             color: 'black',
             textAlign: 'left'
@@ -105,7 +116,7 @@ function StudentHomePage() {
             </tr>
             <tr>
             <th scope="row" >3/03/21</th>
-            <th scope="row">CS 468</th>
+            <th scope="row">C S 468</th>
             <td><p style={{
             color: 'black',
             textAlign: 'left'

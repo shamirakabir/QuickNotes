@@ -15,8 +15,8 @@ function Login(props) {
   }
   const onLoginClick = (event) => {
     console.log(event);
-    props.setloginProfessor(true);
-    props.setloginStudent(false);
+    props.setloginProfessor(false);
+    props.setloginStudent(true);
   }
  
   return (
@@ -45,7 +45,7 @@ function Login(props) {
       <div class="form-group">
       <div class="controls">
       <div class="signin">
-      <Link to="/professorHomePage" onClick={onLoginClick}>
+      <Link to="/studentHomePage" onClick={onLoginClick}>
       <button type="button" class="btn btn-primary signin user">Sign In</button>
       </Link>
       <i class="busy busy24"></i>
